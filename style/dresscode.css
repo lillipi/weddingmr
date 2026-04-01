@@ -1,0 +1,71 @@
+.dresscode-words {
+  margin-top: 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+}
+
+.dresscode-colors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.dresscode-colors-grid {
+  max-width: 390px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.dresscode-colors-grid-dop {
+  max-width: 50%;
+  align-items: center;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.dresscode-colors-plus {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+  color: var(--secondarycolor);
+}
+
+.dresscode-words-dop {
+  margin-top: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: var(--secondarycolor);
+
+}
+
+.dresscode-img {
+  margin-top: 30px;
+}
+
+@media (max-width: 400.98px) {
+  .invite-words {
+    font-size: 20px;
+  }
+
+  .location-words {
+    font-size: 20px;
+  }
+
+  .dresscode-words {
+    font-size: 18px;
+  }
+
+  .dresscode-words-dop {
+    font-size: 16px;
+  }
+}

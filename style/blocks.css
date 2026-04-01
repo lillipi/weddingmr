@@ -1,0 +1,150 @@
+.invite {
+  margin-top: 45px;
+}
+
+.block-name {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 85%;
+  color: var(--secondarycolor);
+  text-align: center;
+}
+
+.invite-words {
+  margin-top: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 23px;
+  text-align: center;
+}
+
+.time {
+  margin-top: 45px;
+  padding: 45px 0;
+  background-color: var(--accentgreen);
+}
+
+.time .block-name {
+  color: var(--maincolor);
+}
+
+.time-img {
+  margin-top: 35px;
+  max-width: 400px;
+  width: 95%;
+}
+
+.location {
+  margin-top: 45px;
+}
+
+.location-words {
+  margin-top: 35px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+}
+
+.location-link {
+  margin-top: 30px;
+  background-color: var(--accentgreen);
+  color: var(--secondarycolor);
+  padding: 48px 8px;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 1.3;
+}
+
+.location-link::before,
+.location-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  color: var(--secondarycolor);
+  background-color: var(--accentgreen);
+  opacity: 0.6;
+  pointer-events: none;
+  animation: pulse 10s infinite;
+  z-index: -111;
+}
+
+.location-link::after {
+  animation-delay: 5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+}
+
+.location-link span {
+  position: relative;
+  z-index: 2;
+}
+
+.location-img {
+  margin-top: 25px;
+}
+
+.dresscode {
+  margin-top: 45px;
+}
+
+.final {
+  margin-top: 40px;
+}
+
+.final-words {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--secondarycolor);
+}
+
+@media (max-width: 400.98px) {
+  .invite-words {
+    font-size: 20px;
+  }
+
+  .location-words {
+    font-size: 18px;
+  }
+
+  .location-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 377.98px) {
+  .block-name {
+    font-size: 48px;
+  }
+}

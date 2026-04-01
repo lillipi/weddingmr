@@ -1,0 +1,92 @@
+.calendar {
+  margin-top: 45px;
+}
+
+.calendar-title {
+  position: relative;
+  max-width: 316px;
+  max-height: 109px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-name {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 29px 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 85%;
+  text-align: center;
+}
+
+.calendar-name::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+
+  background-image: url(../img/2026.svg);
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.calendar-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-grid-col {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.calendar-day {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 85%;
+  margin-bottom: 3px;
+}
+
+.calendar-numb {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 85%;
+  text-align: center;
+}
+
+.calendar-numb-select {
+  color: var(--maincolor);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.calendar-numb-select::before {
+  content: "";
+  position: absolute;
+  height: 37px;
+  z-index: -1;
+
+  background-image: url(../img/heart.svg);
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+}
