@@ -48,3 +48,14 @@ if ('IntersectionObserver' in window) {
   // просто сразу показываем элементы
   scrollElements.forEach(el => el.classList.add('in-view'));
 }
+
+window.addEventListener('load', function () {
+  // Скрываем прелоадер
+  const preloader = document.getElementById('preloader');
+  const content = document.getElementById('content');
+
+  setTimeout(() => {
+    preloader.classList.add('hide');
+    content.classList.add('visible');
+  }, 500); // небольшая задержка для плавности
+});
